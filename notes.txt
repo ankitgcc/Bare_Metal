@@ -1,0 +1,17 @@
+1. Edit main.c
+        ↓
+2. make
+        ↓
+3. Start OpenOCD (cd ~/Documents/Bare_Metal/app
+
+openocd -f interface/stlink.cfg -f target/stm32l1.cfg)
+        ↓
+4. Open another terminal
+        ↓
+5. telnet localhost 4444(telnet localhost 4444)
+        ↓
+6. reset halt (reset halt)
+        ↓
+7. program main.elf verify
+        ↓
+8. reset run

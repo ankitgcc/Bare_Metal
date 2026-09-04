@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build Application",
+            "options": {
+                "cwd": "${workspaceFolder}/app"
+            },
+            "command": "make",
+            "problemMatcher": "$gcc"
+        },
+        {
+            "type": "shell",
+            "label": "Clean Application",
+            "options": {
+                "cwd": "${workspaceFolder}/app"
+            },
+            "command": "make clean",
+            "problemMatcher": []
+        }
+    ]
+}

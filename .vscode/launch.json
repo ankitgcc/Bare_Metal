@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug STM32L152RE",
+            "type": "cortex-debug",
+            "request": "launch",
+
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/app/main.elf",
+
+            "gdbPath": "/usr/bin/gdb-multiarch",
+
+            "servertype": "openocd",
+            "serverpath": "/usr/bin/openocd",
+
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32l1.cfg"
+            ],
+
+            "interface": "swd",
+            // "runToEntryPoint": "main"
+        }
+    ]
+}
